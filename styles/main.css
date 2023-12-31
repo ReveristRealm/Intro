@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at bottom, black 0, black 100%);
+}
+.space {
+  background: black center / 200px 200px round;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Makes the star in the background of each div*/
+.stars1 {
+  z-index: -18;
+  animation: space 200s ease-in-out infinite;
+  animation: fade 4s linear fowards;
+  background-image: radial-gradient(
+      1px 1px at 25px 5px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+.stars2 {
+  z-index: -19;
+  animation: space2 250s ease-in-out infinite;
+  animation: fade 4s linear fowards;
+  background-image: radial-gradient(
+      1px 1px at 75px 125px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+.stars3 {
+  z-index: -20;
+  animation: space3 300s ease-in-out infinite;
+  animation: fade 4s linear fowards;
+  background-image: radial-gradient(
+      1px 1px at 10px 10px,
+      white,
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)),
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+@keyframes space {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@keyframes space2 {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes space3 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 200px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-guide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 350px;
+}
+.title {
+  font-size: 28px;
+  color: white;
+}
+.intro {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 14px 0 rgb(255, 255, 255, 0.2);
+  grid-column: 1/9;
+  padding: 51px 58px;
+  border-radius: 30px 50px;
+  overflow: hidden;
+  position: relative;
+}
+.intro-container {
+  margin-bottom: 10px;
+}
+.intro-under {
+  color: gray;
+  font-family: "Helvitica", sans-serif;
+}
+.intro-myName {
+  font-size: 30px;
+  color: white;
+  font-family: "Helvitica", sans-serif;
+}
+.intro-para {
+  font-size: 56px;
+  max-width: 500px;
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Helvitica", sans-serif;
+}
+.intro-para2 {
+  font-size: 22px;
+  max-width: 420px;
+  color: white;
+  font-family: "Helvitica", sans-serif;
+}
+.intro-me {
+  grid-column: 9/13;
+  background-color: blueviolet;
+  background-image: url("https://storage.googleapis.com/pai-images/9a3012280db447dcb0269201d4ce2160.jpeg");
+  background-position: 65% 5%;
+  border-radius: 50px 30px;
+}
+.intro-background {
+  animation: rotatebackground 30s linear infinite;
+  background: linear-gradient(0.25turn, #e66465, black, rgba(0, 212, 255, 1));
+  top: -130%;
+  left: -60%;
+  position: absolute;
+  z-index: -1;
+  width: 1510px;
+  height: 1500px;
+  opacity: 0.2;
+}
+@keyframes rotatebackground {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.education {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Helvitica", sans-serif;
+  margin-top: 25px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+}
+.education-school {
+  grid-column: 1/5;
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+  margin-top: 20px;
+  border-radius: 30px 50px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+.education-school-text {
+  color: white;
+  font-size: 30px;
+}
+.education-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+}
+.education-school-degree {
+  color: gray;
+}
+.education-school-list {
+  margin-top: 20px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+.education-school-background {
+  animation: rotatebackground 30s linear infinite;
+  background: linear-gradient(0.25turn, #588157, black, #ffa200);
+  top: -300%;
+  left: -200%;
+  position: absolute;
+  z-index: -1;
+  width: 1510px;
+  height: 1500px;
+  opacity: 0.2;
+}
+.education-yearUp {
+  grid-column: 5/9;
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+  margin-top: 20px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.education-yearUp-background {
+  animation: rotatebackground 30s linear infinite;
+  background: linear-gradient(0.25turn, #588157, black, #ffa200);
+  top: -300%;
+  left: -200%;
+  position: absolute;
+  z-index: -1;
+  width: 1510px;
+  height: 1500px;
+  opacity: 0.2;
+}
+.education-codepath {
+  grid-column: 9/13;
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+  margin-top: 20px;
+  border-radius: 50px 30px;
+  position: relative;
+  overflow: hidden;
+}
+.education-codepath-background {
+  animation: rotatebackground 30s linear infinite;
+  background: linear-gradient(0.25turn, #588157, black, #ffa200);
+  top: -300%;
+  left: -200%;
+  position: absolute;
+  z-index: -1;
+  width: 1510px;
+  height: 1500px;
+  opacity: 0.2;
+}
