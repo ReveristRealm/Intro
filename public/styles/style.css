@@ -5,14 +5,13 @@
 }
 body {
   height: 100vh;
-  overflow: hidden;
   background: radial-gradient(circle at bottom, black 0, black 100%);
 }
 .space {
   background: black center / 200px 200px round;
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 }
@@ -263,6 +262,7 @@ body {
   width: 100%;
   height: 400px;
   margin-top: 10px;
+  font-family: "Helvitica", sans-serif;
 }
 .header {
   align-items: center;
@@ -365,7 +365,7 @@ body {
 }
 .education-school-text {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 .education-text {
   display: flex;
@@ -374,19 +374,40 @@ body {
   color: white;
   font-size: 20px;
 }
+.education-text2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 13px;
+}
 .education-school-degree {
   color: gray;
+}
+.education-school-grad {
+  color: gray;
+}
+.rev {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+  font-size: 20px;
 }
 .education-school-list {
   margin-top: 20px;
   list-style: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 .education-school-background {
   animation: rotatebackground 30s linear infinite;
-  background: linear-gradient(0.25turn, #588157, black, #ffa200);
-  top: -300%;
+  background: linear-gradient(
+    0.25turn,
+    #588157,
+    rgba(108, 122, 137, 0.3),
+    #ffa200
+  );
+  top: -120%;
   left: -200%;
   position: absolute;
   z-index: -1;
@@ -394,18 +415,35 @@ body {
   height: 1500px;
   opacity: 0.2;
 }
-.education-yearUp {
+.yearUp {
   grid-column: 5/9;
-  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
-  margin-top: 20px;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
+  border-radius: 50px 50px;
+}
+.codepath {
+  grid-column: 9/13;
+  border-radius: 50px 30px;
+}
+.blank {
+  position: absolute;
+  width: 700px;
+  height: 80px;
+  background: linear-gradient(#465c69, rgba(115, 82, 144, 0.3));
+  color: white;
+  text-align: center;
+  left: -50%;
+  rotate: -30deg;
+  font-size: 60px;
+  z-index: 2;
 }
 .education-yearUp-background {
   animation: rotatebackground 30s linear infinite;
-  background: linear-gradient(0.25turn, #588157, black, #ffa200);
-  top: -300%;
+  background: linear-gradient(
+    0.25turn,
+    #588157,
+    rgba(108, 122, 137, 0.3),
+    #ffa200
+  );
+  top: -120%;
   left: -200%;
   position: absolute;
   z-index: -1;
@@ -413,22 +451,52 @@ body {
   height: 1500px;
   opacity: 0.2;
 }
-.education-codepath {
-  grid-column: 9/13;
-  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
-  margin-top: 20px;
-  border-radius: 50px 30px;
-  position: relative;
-  overflow: hidden;
+.education-desc {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
 }
 .education-codepath-background {
   animation: rotatebackground 30s linear infinite;
-  background: linear-gradient(0.25turn, #588157, black, #ffa200);
-  top: -300%;
+  background: linear-gradient(
+    0.25turn,
+    #588157,
+    rgba(108, 122, 137, 0.3),
+    #ffa200
+  );
+  top: -120%;
   left: -200%;
   position: absolute;
   z-index: -1;
   width: 1510px;
   height: 1500px;
   opacity: 0.2;
+}
+.skills {
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+  border-radius: 30px 50px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+  padding: 30px 20px;
+  grid-column: 1/3;
+}
+.sk-title {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.sk-language {
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+  font-size: 20px;
+  list-style: none;
+}
+.framework {
+  grid-column: 3/5;
+}
+.sk {
+  margin-top: 70px;
 }
