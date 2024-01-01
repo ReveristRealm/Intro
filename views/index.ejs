@@ -11,16 +11,20 @@
   </head>
   <body>
     <div class="container">
-      <nav class="header">
+      <nav class="header skills">
         <div class="header-nav">
           <div class="title header-name">Daniel</div>
           <div class="title job">,Fullstack developer</div>
         </div>
         <ul class="title header-guide">
-          <li>Present</li>
-          <li>Skills</li>
-          <li>Contact</li>
+          <li class="link">
+            <a href="https://www.linkedin.com/in/danieljac/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/ReveristRealm">Github</a>
+          </li>
         </ul>
+        <div class="head-background"></div>
       </nav>
       <section class="grid">
         <div class="intro">
@@ -36,7 +40,14 @@
           <div class="intro-background"></div>
         </div>
 
-        <div class="intro-me"></div>
+        <div class="intro-me">
+          <img
+            src="<%= data.sprites.front_default %>"
+            alt="<%= data.name%>"
+            width="100%"
+          />
+          <div class="intro-background"></div>
+        </div>
       </section>
       <div class="education">Education</div>
       <section class="grid">
@@ -117,7 +128,31 @@
           </ul>
           <div class="language-background"></div>
         </div>
-        <div class=""></div>
+        <div class="skills nextUp">
+          <div class="nextUp-que">Whats Next?</div>
+          <div class="nextUp-text">Technologies to learn in 2024:</div>
+          <ul class="sk-language">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Kotlin</li>
+            <li>AWS</li>
+            <li>Azure</li>
+          </ul>
+          <div class="language-background next"></div>
+        </div>
+        <div class="skills dev">
+          <div class="sk-title">Dev Tools</div>
+          <ul class="sk sk-language">
+            <li>Git</li>
+            <li>Github</li>
+            <li>IntelliJ</li>
+            <l1>MySql</l1>
+            <li>VScode</li>
+            <li>Visual Studio</li>
+            <li>Postman</li>
+          </ul>
+          <div class="language-background"></div>
+        </div>
       </section>
       <div class="space stars1"></div>
       <div class="space stars2"></div>

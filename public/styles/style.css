@@ -268,8 +268,9 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  background-color: black;
   height: 200px;
+  margin-bottom: 25px;
+  position: relative;
 }
 .header-nav {
   display: flex;
@@ -279,11 +280,26 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 350px;
+  width: 250px;
+  list-style: none;
 }
+.head-background {
+  animation: rotatebackground 15s linear infinite;
+  background: linear-gradient(0.25turn, #e66465, black, rgba(0, 212, 255, 1));
+  left: -20%;
+  position: absolute;
+  z-index: -1;
+  width: 1910px;
+  height: 1700px;
+  opacity: 0.2;
+}
+
 .title {
   font-size: 28px;
   color: white;
+}
+.job {
+  color: gray;
 }
 .intro {
   background-color: rgba(0, 0, 0, 0.1);
@@ -321,13 +337,16 @@ body {
 }
 .intro-me {
   grid-column: 9/13;
-  background-color: blueviolet;
-  background-image: url("https://storage.googleapis.com/pai-images/9a3012280db447dcb0269201d4ce2160.jpeg");
-  background-position: 65% 5%;
+  /* background-image: url("https://storage.googleapis.com/pai-images/9a3012280db447dcb0269201d4ce2160.jpeg");*/
+  box-shadow: 0px 2px 15px 0 rgb(255, 255, 255, 0.2);
+  border-radius: 30px 50px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
   border-radius: 50px 30px;
 }
 .intro-background {
-  animation: rotatebackground 30s linear infinite;
+  animation: rotatebackground 15s linear infinite;
   background: linear-gradient(0.25turn, #e66465, black, rgba(0, 212, 255, 1));
   top: -130%;
   left: -60%;
@@ -400,7 +419,7 @@ body {
   font-size: 18px;
 }
 .education-school-background {
-  animation: rotatebackground 30s linear infinite;
+  animation: rotatebackground 15s linear infinite;
   background: linear-gradient(
     0.25turn,
     #588157,
@@ -430,13 +449,14 @@ body {
   background: linear-gradient(#465c69, rgba(115, 82, 144, 0.3));
   color: white;
   text-align: center;
-  left: -50%;
+  left: -51%;
+  bottom: 40%;
   rotate: -30deg;
   font-size: 60px;
   z-index: 2;
 }
 .education-yearUp-background {
-  animation: rotatebackground 30s linear infinite;
+  animation: rotatebackground 15s linear infinite;
   background: linear-gradient(
     0.25turn,
     #588157,
@@ -458,7 +478,7 @@ body {
   font-size: 20px;
 }
 .education-codepath-background {
-  animation: rotatebackground 30s linear infinite;
+  animation: rotatebackground 15s linear infinite;
   background: linear-gradient(
     0.25turn,
     #588157,
@@ -496,7 +516,43 @@ body {
 }
 .framework {
   grid-column: 3/5;
+  border-radius: 30px;
 }
 .sk {
   margin-top: 70px;
+}
+.nextUp {
+  grid-column: 5/11;
+  text-align: center;
+}
+.dev {
+  grid-column: 11/13;
+  border-radius: 30px;
+}
+.language-background {
+  animation: rotatebackground 15s linear infinite;
+  background: linear-gradient(
+    0.25turn,
+    #44008b,
+    rgba(108, 122, 137, 0.3),
+    #e54ed0
+  );
+  top: -120%;
+  left: -200%;
+  position: absolute;
+  z-index: -1;
+  width: 1510px;
+  height: 1500px;
+  opacity: 0.2;
+}
+.next {
+  left: -150%;
+}
+.nextUp-que {
+  color: white;
+  font-size: 70px;
+}
+.nextUp-text {
+  color: white;
+  font-size: 25px;
 }
